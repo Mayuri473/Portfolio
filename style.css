@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.pd-font1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pd-font2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to right, rgb(186, 76, 255), rgb(255, 83, 200));
+    color: white;
+    font-family: "Playfair Display", serif;
+    top: 0;
+    margin: 0;
+}
+
+/* Navbar */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    margin: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+}
+
+.navbar {
+    background: linear-gradient(to right, rgb(73, 9, 83), rgb(134, 34, 134));
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.39);
+    padding: 80px 0;
+    margin: 20px;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        background: linear-gradient(to right, rgba(45, 25, 49, 0.5), rgba(69, 43, 69, 0.4));
+        min-height: 100vh;
+        width: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pic {
+        height: 220px;
+        border: 5px solid white;
+        border-radius: 115px;
+        box-shadow: 0 0 5px 3px rgb(207, 207, 207);
+    }
+
+    .content,
+    .footrow {
+        padding-left: 260px;
+    }
+
+}
+
+.btn {
+    padding: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+}
+
+.btn-brand {
+    background: linear-gradient(to right, rgb(114, 0, 184, .8), rgb(181, 10, 127, .8));
+    border: 3px solid white;
+    color: white;
+}
+
+.btn-brand:hover {
+    background: linear-gradient(to right, rgb(114, 0, 184), rgb(181, 10, 127));
+    border: 3px solid white;
+    box-shadow: 0 0 3px 2px white;
+}
+
+.link-custom {
+    color: white;
+    position: relative;
+    outline: none;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all .4s;
+}
+
+.link-custom:hover,
+.link-custom:focus {
+    color: rgb(255, 255, 131);
+    outline: none;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+    color: yellow;
+}
+
+.c-y {
+    color: yellow;
+}
+
+.bg-base {
+    background: linear-gradient(to right, rgb(73, 9, 83, .6), rgb(134, 34, 134, .6));
+}
+
+.bg-base:hover {
+    background: linear-gradient(to right, rgb(73, 9, 83, .8), rgb(134, 34, 134, .8));
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    cursor: pointer;
+    box-shadow: -6px 6px 4px 2px white;
+}
+
+/* Services */
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: rgb(218, 82, 175);
+    color: white;
+}
+
+/* Skills */
+
+.skill-list {
+    padding-left: 0;
+}
+
+.skill-list li {
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.bar {
+    background: rgba(255, 255, 255, 0.2);
+    display: block;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 1px .5px white;
+}
+
+.bar:hover {
+    box-shadow: 0 0 3px 2px white;
+}
+
+.bar span {
+    float: left;
+    height: 20px;
+    background: linear-gradient(to right, rgb(55, 4, 87), rgb(110, 4, 76));
+    border-radius: 10px;
+}
+
+.html {
+    width: 86%;
+    animation: html 3s;
+}
+
+.css {
+    width: 82%;
+    animation: css 3s;
+}
+
+.javascript {
+    width: 72%;
+    animation: javascript 3s;
+}
+
+.bootstrap {
+    width: 70%;
+    animation: bootstrap 3s;
+}
+
+/* Projects */
+
+.card-custom {
+    margin-bottom: auto;
+}
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.projectimg {
+    height: 250px;
+    transition: all 0.4s ease;
+}
+
+.projectimg:hover {
+    transform: scale(1.1);
+}
+
+/* Content */
+
+#contact .form-control {
+    background-color: rgb(73, 9, 83, .8);
+    border-color: rgb(73, 9, 83);
+    color: white;
+}
+
+#contact .form-control:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.715);
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+/* Footer */
+
+.footrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(73, 9, 83, .6), rgb(134, 34, 134, .6));
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.social-icons a:hover {
+    box-shadow: 0 0 2px 3px white;
+}

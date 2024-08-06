@@ -218,6 +218,11 @@ li {
     animation: bootstrap 3s;
 }
 
+.react {
+    width: 55%;
+    animation: bootstrap 3s;
+}
+
 /* Projects */
 
 .card-custom {
